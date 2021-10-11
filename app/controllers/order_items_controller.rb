@@ -25,7 +25,7 @@ class OrderItemsController < ApplicationController
 
     respond_to do |format|
       if @order_item.save
-        format.html { redirect_to @order_item, notice: "Order item was successfully created." }
+        format.html { redirect_to order_order_item_path(@order_item.order_id, id: @order_item.id), notice: "Order item was successfully created." }
         format.json { render :show, status: :created, location: @order_item }
       else
         format.html { render :new, status: :unprocessable_entity }

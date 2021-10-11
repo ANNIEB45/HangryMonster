@@ -10,5 +10,14 @@
   <%= @order_item.menu_item_id %>
 </p>
 
-<%= link_to 'Edit', edit_order_item_path(@order_item) %> |
-<%= link_to 'Back', order_items_path %>
+<p>
+  <strong>Customer name:</strong>
+  <%= @order_item.order.customer_name %>
+</p>
+<p>
+  <strong>Item name:</strong>
+  <%= @order_item.menu_item.name %>
+</p>
+
+<%= link_to 'Edit', edit_order_order_item_path(@order_item) %> |
+<%= link_to 'Back', order_order_items_path %>

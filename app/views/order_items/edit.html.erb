@@ -2,5 +2,5 @@
 
 <%= render 'form', order_item: @order_item %>
 
-<%= link_to 'Show', @order_item %> |
-<%= link_to 'Back', order_items_path %>
+<%= link_to 'Show', order_order_item_path(@order_item.order_id, id: @order_item.id) %> |
+<%= link_to 'Back', order_order_items_path %>
